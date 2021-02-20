@@ -15,7 +15,7 @@ legend {
 }
 
 input[type=text] {
-    background: pink;
+    background: #00cccc;
 }
 
 label[for=nev]::last-letter {
