@@ -12,20 +12,28 @@ and open the template in the editor.
         <link href="stilusunk.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header>Űrlap</header>
+        <header>Órai munka</header>
         <main>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="masik.html">Másik</a></li>
+                </ul>
+            </nav>
             <article>
                 <form action="feldolgoz.php" target="_blank" method="get">
                     <fieldset>
-                        <legend>Bejelentkezés/Személyes adatok</legend>
+                        <legend>Bejelentkezés</legend>
                     <label for="nev">Kérjük add meg a nevedet: *</label>
-                    <input type="text" name="nev" id="nev" required placeholder="Vezeték Kereszt"><br>
+                    <input type="text" name="nev" id="nev" required placeholder="Vezetéknév Keresztnév"><br>
                     <label for="nev">Kérjük add meg a jelszavadat:</label>
                     <input type="password" name="jelszo" id="jelszo"><br>
+                    <label for="nev">Kérjük add meg az e-mail címed: </label>
+                    <input type="email" name="email" id="email" required placeholder="valami@valami.hu"><br>
                     </fieldset>
                     
                     <fieldset>
-                        <legend>Egyéb adatok</legend>
+                        <legend>Nemed:</legend>
                       <label for="male">Male</label>
                       <input type="radio" id="male" name="gender" value="male" checked >
                       <br>
@@ -39,17 +47,20 @@ and open the template in the editor.
                       
                       <br>
                       <br>
-                      <label>Kedvenc közlekedési eszközöd:</label>
+                      <label>Kedvenc sport(jaid):</label>
                       <br>
-                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                        <label for="vehicle1"> Kerékpár</label><br>
-                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                        <label for="vehicle2"> Autó</label><br>
-                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                        <label for="vehicle3"> Hajó</label>
+                        <input type="checkbox" id="sport1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Labdarúgás</label><br>
+                        <input type="checkbox" id="sport2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Kosárlabda</label><br>
+                        <input type="checkbox" id="sport3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> Kézilabda</label>
                         <br>
-                        <label for="quantity">Hány éves vagy? :</label>
-                        <input type="number" id="ev" name="ev" min="10" max="100">
+                        <input type="checkbox" id="sport4" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Jégkorong</label><br>
+                        
+                        <label for="quantity">Hány éves vagy? (csak felnőtt) :</label>
+                        <input type="number" id="ev" name="ev" min="18" max="100">
 
                     </fieldset>
                     <input type="submit" value="Küld">
@@ -59,4 +70,5 @@ and open the template in the editor.
                 
             </article>
         </main>
+    </body>
 </html>
