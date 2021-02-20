@@ -18,6 +18,21 @@ input[type=text] {
     background: #00cccc;
 }
 
-label[for=nev]::last-letter {
+label[for=nev] {
     color:red;
+}
+
+
+nav ul{
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    color: white;
+}
+
+nav li {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    list-style-type: none;
 }
