@@ -32,20 +32,20 @@ and open the template in the editor.
                     
                     <fieldset>
                         <legend>Egyéb adatok</legend>
-                      <label for="male">Male</label>
+                      <label for="male">Férfi</label>
                       <input type="radio" id="male" name="gender" value="male" checked >
                       <br>
                       
-                      <label for="female">Female</label>
+                      <label for="female">Nő</label>
                       <input type="radio" id="female" name="gender" value="female">
                       <br>
                       
-                      <label for="other">Other</label>
+                      <label for="other">Egyéb</label>
                       <input type="radio" id="other" name="gender" value="other">
                       
                       <br>
                       <br>
-                      <label>Milyen autót keresel:</label>
+                      <label>Milyen autók érdekelnek:</label>
                       <br>
                         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                         <label for="vehicle1"> Japán </label><br>
@@ -54,17 +54,40 @@ and open the template in the editor.
                         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
                         <label for="vehicle3"> Egyéb</label>
                         <br>
-                        <label for="quantity">Hány éves vagy? :</label>
+                        <label for="quantity">Hány éve van jogosítványod? :</label>
                         <input type="number" id="ev" name="ev" min="10" max="100">
 
                     </fieldset>
                     <fieldset>
-                        <label for="cars">Milyen autót keresel?:</label>
+                        <label for="cars">Válassz márkát:</label>
                         <select name="cars">
                           <option value="volvo">Kia</option>
                           <option value="saab">Hyundai</option>
                           <option value="mercedes">Honda</option>
+                          <option value="mercedes">Acura</option>
                           <option value="audi">Toyota</option>
+                          <option value="audi">Lexus</option>
+                          <option value="saab">Mazda</option>
+                          <option value="mercedes">Nissan</option>
+                          <option value="audi">Mitsubishi</option>
+                        </select>
+                        <label for="cars">Üzemanyag:</label>
+                        <select name="cars">
+                          <option value="volvo">Benzin</option>
+                          <option value="saab">Dízel</option>
+                          <option value="audi">Benzin/Gáz</option>
+                          <option value="mercedes">Elektromos</option>
+                          <option value="audi">Hibrid</option>
+                          <option value="audi">Egyéb></option>
+                        </select>
+                        <label for="cars">Kivitel:</label>
+                        <select name="cars">
+                          <option value="volvo">Sedan</option>
+                          <option value="saab">Coupe</option>
+                          <option value="audi">Cabrio</option>
+                          <option value="mercedes">Kombi</option>
+                          <option value="audi">Hatchback</option>
+                          <option value="audi">Egyterű></option>
                         </select>
                     </fieldset>
                     <input type="submit" value="Küld">
